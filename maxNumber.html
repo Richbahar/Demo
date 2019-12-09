@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>求一个数的最大值</title>
+	</head>
+	<body>
+		<script>
+			var numberArr = [1, 2, 3, 4, 5];
+			var max = numberArr[0];
+			//因为max的初始值为numberArr[0],所以遍历时i的值为1
+			for (i = 1; i < numberArr.length; i++) {
+				//改成大于max > numberArr 求最小值
+				if (max < numberArr[i]) {
+					max = numberArr[i];
+				}
+			}
+			console.log(max);
+		</script>
+	</body>
+</html>
