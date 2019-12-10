@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>刷选数组中大于10的数字</title>
+	</head>
+	<body>
+		<script>
+			var arr = [2, 4, 8, 1, 10, 15, 33, 77, 42],
+				newArr = [];
+			for (var i = 0; i < arr.length; i++) {
+				if (arr[i] > 10) {
+					//此时的newArr的长度为0，newArr的长度会随着内容而增加
+					//当arr的第一个数值被赋值给newArr时，newArr的长度加1，以此增加newArr的索引号
+					newArr[newArr.length] = arr[i];
+				}
+			}
+			console.log(newArr);
+		</script>
+	</body>
+</html>
