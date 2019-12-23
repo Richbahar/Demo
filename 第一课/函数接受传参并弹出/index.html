@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>函数接受传参并弹出</title>
+    <style>
+        .dv {
+            position: relative;
+            top: 10px;
+            left: 45%;
+        }
+        
+        #btn3 {
+            position: absolute;
+            left: 45px;
+            margin-top: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dv">
+        <input type="text" placeholder="城市" id="btn1"><br>
+        <input type="text" placeholder="地区" id="btn2"><br>
+        <input type="button" value="传参" id="btn3">
+    </div>
+    <script>
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        //为按钮3注册点击事件
+        btn3.onclick = function() {
+            //创建一个函数，设置2个参数，在函数调用时候打印
+            function fc(city, area) {
+                alert(city.value);
+                alert(area.value);
+            }
+            //调用函数
+            fc(btn1, btn2);
+        }
+    </script>
+</body>
+
+</html>

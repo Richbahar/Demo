@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标移入改变样式</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            border: 10px solid black;
+            color: white;
+            padding: 20px;
+            margin: 10px auto;
+        }
+        /* 预先准备一个活跃时的类名 */
+        
+        .current {
+            background-color: blanchedalmond;
+            border: 10px solid red;
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        鼠标移入改变样式，鼠标移出恢复。
+    </div>
+    <script>
+        var dv = document.getElementsByTagName("div")[0];
+        //鼠标移上去时
+        dv.onmouseover = function() {
+                //给盒子添加类名 current
+                this.className = "current";
+            }
+            //鼠标移出时
+        dv.onmouseout = function() {
+            //为盒子取消类名
+            this.className = "";
+        }
+    </script>
+</body>
+
+</html>

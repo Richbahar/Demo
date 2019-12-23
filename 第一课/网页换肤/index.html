@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="red.css">
+    <title>网页换肤</title>
+    <style>
+        /* 换色按钮 */
+        
+        .color {
+            position: absolute;
+            top: 20px;
+            left: 25%;
+        }
+        
+        .color li {
+            height: 6px;
+            width: 6px;
+            list-style: none;
+            text-indent: 9999px;
+            float: left;
+            margin: 0 10px 0 0;
+            cursor: pointer;
+        }
+        
+        #red {
+            background-color: red;
+            border: 5px solid red;
+        }
+        
+        #green {
+            background-color: green;
+            border: 5px solid green;
+        }
+        
+        #black {
+            background-color: black;
+            border: 5px solid black;
+        }
+        
+        .current {
+            background-color: #fff !important;
+        }
+        /* 新闻导航开始 */
+        
+        .nav {
+            position: absolute;
+            top: 60px;
+            left: 25%;
+        }
+        
+        .nav li {
+            list-style: none;
+            float: left;
+            margin: 0 1px 0 0;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+        }
+        
+        .nav li:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul class=color>
+            <li id="red" class="current">红</li>
+            <li id="green">绿</li>
+            <li id="black">黑</li>
+        </ul>
+        <ul class="nav">
+            <li>新闻</li>
+            <li>娱乐</li>
+            <li>体育</li>
+            <li>电影</li>
+            <li>音乐</li>
+            <li>旅游</li>
+        </ul>
+    </div>
+    <script>
+        var oLink = document.getElementsByTagName("link")[0];
+        var oUl = document.getElementsByTagName("ul")[0];
+        var oLi = oUl.getElementsByTagName("li");
+        //遍历为每个li注册点击事件
+        for (i = 0; i < oLi.length; i++) {
+            oLi[i].onclick = function() {
+                //为每个li取消类名
+                for (i = 0; i < oLi.length; i++) {
+                    oLi[i].className = "";
+                }
+                //使用this来指定需要新增的属性的li
+                this.className = "current";
+                //改变link的css样式表
+                oLink.href = this.id + ".css";
+            }
+        }
+    </script>
+</body>
+
+</html>

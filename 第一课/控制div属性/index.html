@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div属性</title>
+    <style>
+        #box {
+            margin: 10px auto;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        
+        .dv {
+            display: flex;
+            justify-content: center;
+        }
+        
+        input {
+            font-size: 14px;
+            border: 1px solid black;
+            margin: 10px 3px;
+            outline: none;
+        }
+        
+        input:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dv">
+        <input type="button" value="变宽" onclick="setStyle( 'width', '200px')">
+        <input type="button" value="变高" onclick="setStyle('height','200px')">
+        <input type="button" value="变色" onclick="setStyle('background-color','red')" )>
+        <input type="button" value="隐藏" onclick="setStyle('display','none')" )>
+        <input type="button" value="重置" id="reset">
+    </div>
+    <div id="box"></div>
+    <script>
+        //获取盒子
+        var box = document.getElementById("box");
+        var reset = document.getElementById("reset");
+        //创建一个函数，设置2个参数
+        function setStyle(name, value) {
+            box.style[name] = value;
+        }
+        reset.onclick = function() {
+            box.style.width = "100px ";
+            box.style.height = "100px ";
+            box.style.backgroundColor = "black ";
+            box.style.display = "block ";
+
+        }
+    </script>
+</body>
+
+</html>

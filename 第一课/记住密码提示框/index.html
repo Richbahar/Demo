@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>记住密码提示框</title>
+</head>
+<style>
+    #dv {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #text {
+        width: 250px;
+        height: 40px;
+        padding: 10px;
+        background-color: blanchedalmond;
+        border: 1px solid red;
+        font-size: 14px;
+        color: black;
+        margin-top: 5px;
+        position: absolute;
+        left: 45%;
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="dv">
+        <input type="checkbox" id="btn">
+        <span>两周内自动登陆</span>
+    </div>
+    <div id="text">为了您的信息安全，请不要在网吧或公用电脑上使用此功能</div>
+    <script>
+        var btn = document.getElementById("btn")
+        var dv = document.getElementById("text")
+        btn.onmouseover = function() {
+            dv.style.display = "block";
+        }
+        btn.onmouseout = function() {
+            dv.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

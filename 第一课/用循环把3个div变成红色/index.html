@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用循环把3个div变成红色</title>
+    <style>
+        #dv div {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin-right: 10px;
+        }
+        
+        input {
+            display: block;
+            margin: 10px auto;
+            border: 1px solid black;
+            font-size: 14px;
+        }
+        
+        #dv {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="button" value="点击把div变成红色" id="btn">
+        <div id="dv">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById("btn");
+        var dv = document.getElementById("dv");
+        var oDiv = dv.getElementsByTagName("div");
+        //为按钮注册点击事件
+        btn.onclick = function() {
+            //循环遍历每个div
+            for (i = 0; i < oDiv.length; i++) {
+                //为每个div设置背景色
+                oDiv[i].style.backgroundColor = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>
