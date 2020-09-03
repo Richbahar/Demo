@@ -119,7 +119,9 @@ element.style {
 .rm-all-pages{
   background: #f7f7f7;
   margin: 3em;
+  height:90%;
   border-radius:10px;
+  padding:20px !imporant;
 }
 
 /*视图滤镜*/
@@ -152,7 +154,6 @@ canvas[data-id="layer2-node"] {
     bottom: 10px !important;
 }
 #buffer .bp3-popover-target >.bp3-button {
-    background: rgba(0, 0, 0, 0.1);
     height: 30px;
     width: 30px;
 }
@@ -187,4 +188,20 @@ canvas[data-id="layer2-node"] {
 }
 #buffer a:hover {
     opacity: 0.8;
+}
+/*一些小图标*/
+.bp3-icon-filter::before{
+    color:#eb8f8f !important;
+}
+
+.bp3-icon-help::before{
+   color:#eb8f8f !important;
+}
+
+/*所有页面标头*/
+.rm-pages-row-header{
+  background-color: #d9eadfd4 !important;
+}
+.rm-pages-row-header span{
+  color:#eb8f8f !important;
 }
