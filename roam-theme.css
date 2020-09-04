@@ -213,7 +213,8 @@ h1{
   color:#e0712feb !important;
 }
 .roam-article > div:last-child a{
-  color:#3797a4 !important;
+  color:#b83dc78a !important;
+  font-weight:bold;
 }
 /*右边栏*/
 #right-sidebar {
@@ -227,8 +228,8 @@ h1{
 
 .rm-ref-page-view .flex-h-box 
 .rm-reference-item {
-    margin-top: 10px;
-  margin-bottom:15px;
+    margin-top: 15px;
+  margin-bottom:20px;
     border-radius: 6px;
     border: 2px dashed #eb8f8fa1;
     margin-right: 8px;
@@ -237,4 +238,7 @@ h1{
     background-color: #e7c7d24a !important;
     padding: 8px;
   font-size:13px;
+}
+.refs-by-page-view{
+  margin:20px 0 !important;
 }
