@@ -16,7 +16,7 @@ body {
 
 .roam-body .roam-app,
 .roam-body .roam-app h1 {
-    color:#333; /* 正文内容*/
+    color:#2c3a49ba; /* 正文内容*/
 }
 
 
@@ -108,7 +108,7 @@ element.style {
 
 /*正文 上*/
 .roam-article > div{
-  background:#F8F8F8;
+  background:#F7f7f7;
   border-radius:10px;
   padding:20px 50px 30px 40px;
   margin-top:2em;
@@ -242,6 +242,14 @@ h1{
 .refs-by-page-view{
   margin:20px 0 !important;
 }
-
 ::selection{
   background:#eca85452 !important;
+}
+
+.simple-bullet-inner{
+  background:#c8d5b9 !important;
+}
+/*文本行高*/
+.roam-block{
+  margin-top:2px !important;
+}
