@@ -227,12 +227,14 @@ h1{
 
 .rm-ref-page-view .flex-h-box 
 .rm-reference-item {
-    margin-top: 8px;
+    margin-top: 10px;
+  margin-bottom:15px;
     border-radius: 6px;
-    border: 1px solid #e4e9ee;
+    border: 2px dashed #eb8f8fa1;
     margin-right: 8px;
     flex: 1 1 100%;
     word-break: break-word;
     background-color: #e7c7d24a !important;
     padding: 8px;
+  font-size:13px;
 }
