@@ -197,6 +197,9 @@ canvas[data-id="layer2-node"] {
 .bp3-icon-help::before{
    color:#eb8f8f !important;
 }
+.expand-icon::before{
+     color:#eb8f8f !important;
+}
 
 /*所有页面标头*/
 .rm-pages-row-header{
@@ -205,17 +208,19 @@ canvas[data-id="layer2-node"] {
 .rm-pages-row-header span{
   color:#eb8f8f !important;
 }
+
+/*文本样式*/
 h1{
   color:#e0712feb !important;
 }
-
+.roam-article > div:last-child a{
+  color:#3797a4 !important;
+}
 /*右边栏*/
 #right-sidebar {
 
-    background-color: #f7e8f6 !important;
+    background-color: #fae2e4b8 !important;
 	border-left: 2px dashed #eb8f8f;
  
-
 }
-
 
