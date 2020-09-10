@@ -1,4 +1,19 @@
-
+/*圆点*/
+.controls .opacity-7{
+  color:#c9000030;
+}
+.simple-bullet-inner{
+  background:#f7999f4f !important;
+  margin-top:3px;
+}
+.roam-bullet-closed{
+  background:url(https://i.loli.net/2020/09/09/IWJvF3oAuBZeNHL.png)no-repeat center;
+  background-size:12px;
+  width:20px;
+  height:20px;
+  margin-right:4px;
+  margin-top:5px !important;
+}
 body {
     background: #d9eadfd4;
     line-height: 10em;
@@ -212,6 +227,7 @@ canvas[data-id="layer2-node"] {
 h1{
   color:#e0712feb !important;
 }
+
 .roam-article > div:last-child a{
   color:#b83dc78a !important;
   font-weight:bold;
@@ -246,10 +262,12 @@ h1{
   background:#eca85452 !important;
 }
 
-.simple-bullet-inner{
-  background:#c8d5b9 !important;
-}
+
 /*文本行高*/
 .roam-block{
   margin-top:2px !important;
 }
+.roam-block .dont-unfocus-block{
+  background:red !important;
+}
+
